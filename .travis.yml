@@ -1,0 +1,13 @@
+nguage: python
+
+python:
+    - 2.7
+
+install:
+    - pip install pygame
+
+script:
+    - python main.py
+
+after_success:
+    - coveralls
