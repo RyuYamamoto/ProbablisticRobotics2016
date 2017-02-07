@@ -37,11 +37,15 @@ Q値の変化1試行毎のQ値の最大値をプロットした．一回のマ�
 
 ![q_value](picture/q_value.jpg)  
 
+動いている様子
+
+[![](http://img.youtube.com/vi/eK2_nBD0hzY/0.jpg)](https://www.youtube.com/watch?v=eK2_nBD0hzY)
+
 ### おまけ
 data/map.csvをいじれば何×何でも探索可能．ただマスが増えると収束させるために試行回数をより増やす必要がある．
 
 #### 20×30の場合
-![q_value](picture/q_value20x30.jpg)  
+![q_value](picture/policy20x30.jpg)  
 
 #### 100×100の場合(計算終わる気がしなかった)
 ![q_value](picture/map100x100.png)  
