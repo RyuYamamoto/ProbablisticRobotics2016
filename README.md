@@ -4,8 +4,8 @@
 [![Build Status](https://travis-ci.org/RyuYamamoto/ProbablisticRobotics2016.svg?branch=master)](https://travis-ci.org/RyuYamamoto/ProbablisticRobotics2016)
 
 ### LICENSE
-![MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg)
-This software is released under the MIT License, see LICENSE.
+![MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg)  
+This software is released under the MIT License, see LICENSE.  
 
 ### 問題
 強化学習による迷路探索．デフォルトでは10×15マスの迷路を探索する．
