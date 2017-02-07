@@ -31,7 +31,7 @@ class MapDisplay:
                 elif self.map_info[j,i] == 3:
                     pygame.draw.rect(self.screen, (0,0,255), Rect(i*MASU,j*MASU,MASU,MASU))
                 pygame.draw.rect(self.screen, (50,50,50), Rect(i*MASU,j*MASU,MASU,MASU),1)
-        pygame.draw.rect(self.screen, (255,0,0), Rect(x*MASU,y*MASU,MASU,MASU),3)
+        pygame.draw.rect(self.screen, (255,0,0), Rect(x*MASU,y*MASU,MASU,MASU),5)
 
     def show_policy(self, q_table):
         for x in range(self.row):
