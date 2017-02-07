@@ -5,7 +5,7 @@ import copy
 import pygame
 from pygame.locals import *
 
-MASU        = 45
+MASU = 10
 
 class MapDisplay:
     def __init__(self, map_info):
