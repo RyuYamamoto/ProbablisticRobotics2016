@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/RyuYamamoto/ProbablisticRobotics2016.svg?branch=master)](https://travis-ci.org/RyuYamamoto/ProbablisticRobotics2016)
 
 ### LICENSE
-![MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg)  
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)  
 This software is released under the MIT License, see LICENSE.  
 
 ### 問題
