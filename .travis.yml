@@ -1,13 +1,9 @@
-nguage: python
-
+language: python
 python:
-    - 2.7
-
+- '2.7'
+- '3.3'
 install:
-    - pip install pygame
+  - pip install pygame
+  - pip install -r requirements.txt
 
-script:
-    - python main.py
-
-after_success:
-    - coveralls
+script: python main.py
