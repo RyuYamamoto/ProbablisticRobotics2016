@@ -8,7 +8,6 @@ before_install:
 #install:
   #- python setup.py install
 script: 
-  - cd $HOME/build/my/package
   - python main.py
 virtualenv:
   system_site_packages: true
