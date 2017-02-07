@@ -4,8 +4,6 @@ python:
 before_install:
   - sudo apt-get update
   - sudo apt-get install python-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev python-pygame python-matplotlib python-numpy
-#install:
-  #- python setup.py install
 script: 
   - python main.py
 virtualenv:
