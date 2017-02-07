@@ -18,7 +18,7 @@ if __name__ == "__main__":
     _trial = 0
     while True:
         agentQL.learn() #行動学習
-        #map_display.draw(agentQL.state)
+        map_display.draw(agentQL.state)
         pygame.display.update()
         for event in pygame.event.get():
             if event.type==QUIT:
@@ -33,12 +33,12 @@ if __name__ == "__main__":
         if MAX_GOAL_TRIAL < agentQL.goal_count:
             break
         #time.sleep(0.02)
-'''
+
     #方策の可視化
     map_display.show_policy(agentQL.q)
     pygame.display.update()
     pygame.image.save(map_display.screen, "picture/policy.jpg")
-
+'''
     #Q値の変化
     fig = plt.figure()
     ax  = fig.add_subplot(1,1,1)
