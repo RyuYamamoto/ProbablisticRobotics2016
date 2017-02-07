@@ -11,7 +11,7 @@ import time
 MAX_GOAL_TRIAL = 300
 
 if __name__ == "__main__":
-    map_reward  = np.loadtxt('data/map100x100.csv', delimiter=',') 
+    map_reward  = np.loadtxt('data/map.csv', delimiter=',') 
     agentQL     = AgentQLearning(map_reward,0.1,0.2,0.9)
     map_display = MapDisplay(map_reward)
    
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     #方策の可視化
     map_display.show_policy(agentQL.q)
     pygame.display.update()
-    pygame.image.save(map_display.screen, "picture/policy100x100.jpg")
+    pygame.image.save(map_display.screen, "picture/policy.jpg")
 
     #Q値の変化
     fig = plt.figure()
