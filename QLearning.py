@@ -14,6 +14,8 @@ class AgentQLearning:
         self.row, self.column = map_filed.shape
         
         self.goal_count     = 0
+        self.trial          = []
+        self.q_value_list   = []
         self.state          = np.array([0,0])
         self.action_list    = self.generate_action_list()
         self.move_list      = {0:np.array([0,-1]), 1:np.array([1,0]), 2:np.array([0,1]), 3:np.array([-1,0])}
@@ -50,6 +52,7 @@ class AgentQLearning:
             action = current_acton_list[0]
         move = self.move_list.get(action)
 	self.update_q(action, move)
+        self.q_value_list.append(self.q_max_value(move))
         self.state += move 
 
     def update_q(self, action_list_index, move):

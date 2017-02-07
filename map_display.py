@@ -27,9 +27,9 @@ class MapDisplay:
                 if self.map_info[j,i] == 0:
                     pygame.draw.rect(self.screen, (255,255,255), Rect(i*MASU,j*MASU,MASU,MASU))
                 elif self.map_info[j,i] == -1:
-                    pygame.draw.rect(self.screen, (0,0,0), Rect(i*MASU,j*MASU,MASU,MASU))
-                elif self.map_info[j,i] == 3:
                     pygame.draw.rect(self.screen, (0,0,255), Rect(i*MASU,j*MASU,MASU,MASU))
+                elif self.map_info[j,i] == 3:
+                    pygame.draw.rect(self.screen, (255,255,0), Rect(i*MASU,j*MASU,MASU,MASU))
                 pygame.draw.rect(self.screen, (50,50,50), Rect(i*MASU,j*MASU,MASU,MASU),1)
         pygame.draw.rect(self.screen, (255,0,0), Rect(x*MASU,y*MASU,MASU,MASU),5)
 
@@ -47,4 +47,8 @@ class MapDisplay:
                     direction = u"→"
                 elif max_q_action == 3:
                     direction = u"↑"
+                if self.map_info[x,y] == 0:
+                    if q_table[:,x,y].max != 0:
+                        color = (q_table[:,x,y].max()/3.0)*255.0
+                        pygame.draw.rect(self.screen, (255,255-color,255-color), Rect(y*MASU,x*MASU, MASU,MASU))
                 self.screen.blit(self.font.render(direction, True, (125,125,125)), (y*MASU+MASU/3,x*MASU+MASU/4))
