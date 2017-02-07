@@ -3,6 +3,10 @@
 
 [![Build Status](https://travis-ci.org/RyuYamamoto/ProbablisticRobotics2016.svg?branch=master)](https://travis-ci.org/RyuYamamoto/ProbablisticRobotics2016)
 
+### LICENSE
+![MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg)
+This software is released under the MIT License, see LICENSE.
+
 ### 問題
 強化学習による迷路探索．デフォルトでは10×15マスの迷路を探索する．
 
@@ -24,6 +28,11 @@
   - QLearningによる行動学習  
  - data/map.csv  
   - 各セルの報酬情報.  
+
+### 外部ライブラリ
+ - numpy  
+ - matplotlib  
+ - pygame  
 
 ### 仕様
  - 300回ゴールしたら学習を終了，最適方策を可視化したものをpolicy.jpgという画像名で保存．各マスの矢印は最適な行動を示し，各セルのQ値の大きさによってマスの色が変わる(Q値が大きいほど赤色になる．Q値がゼロの場合は変化なし)．  
