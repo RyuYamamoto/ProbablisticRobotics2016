@@ -21,13 +21,13 @@ This software is released under the MIT License, see LICENSE.
 
 ### ソフトウェア
  - main.py  
-  - メインコード．  
+   - メインコード．  
  - map_display.py  
-  - pygameによる可視化．  
+   - pygameによる可視化．  
  - QLearning.py
-  - QLearningによる行動学習  
+   - QLearningによる行動学習  
  - data/map.csv  
-  - 各セルの報酬情報.  
+   - 各セルの報酬情報.  
 
 ### 外部ライブラリ
  - numpy  
